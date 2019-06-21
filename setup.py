@@ -8,7 +8,7 @@ setuptools.setup(
      author="Susi Eva",
      author_email="susipurba2@gmail.com",
      description="Parsing PR, Issue, Commit, and LOC data from GitHub REST API",
-     long_description=README,
+     long_description=long_description,
      url="https://github.com/Susi-Eva/Parsing-API",
      packages=setuptools.find_packages(),
      classifiers=[
