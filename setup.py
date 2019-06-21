@@ -1,4 +1,6 @@
 import setuptools
+
+
 with open("README.md", "r") as fh:
     long_description = fh.read()
 setuptools.setup(
@@ -9,8 +11,16 @@ setuptools.setup(
      author_email="susipurba2@gmail.com",
      description="Parsing PR, Issue, Commit, and LOC data from GitHub REST API",
      long_description=long_description,
-     url="https://github.com/Susi-Eva/Parsing-API",
+     long_description_content_type= "text/markdown",
+     url="https://github.com/Susi-Eva/Parser",
      packages=setuptools.find_packages(),
+     include_package_data = True,
+     install_requires = [
+                        "request", 
+                        "math",
+                        "pandas",
+                        "json",
+                        "operator",],
      classifiers=[
          "Programming Language :: Python :: 3",
          "License :: OSI Approved :: MIT License",
